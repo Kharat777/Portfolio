@@ -1,126 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Machindra Kharat - IT Professional Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: url('https://i.postimg.cc/DzYqWnTr/it-infrastructure-background.jpg') no-repeat center center fixed;
-            background-size: cover;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            max-width: 900px;
-            margin: auto;
-            padding: 20px;
-            background: rgba(255, 255, 255, 0.95);
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        }
-        header {
-            background: #222;
-            padding: 20px;
-            text-align: center;
-            border-bottom: 4px solid #f57c00;
-            color: white;
-        }
-        h1 {
-            margin: 0;
-            font-size: 34px;
-            color: #f57c00;
-        }
-        nav {
-            margin-top: 10px;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 18px;
-            font-weight: bold;
-        }
-        section {
-            margin: 40px 0;
-            padding: 20px;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-        }
-        h2 {
-            color: #f57c00;
-            border-bottom: 2px solid #f57c00;
-            padding-bottom: 5px;
-        }
-        .btn {
-            display: inline-block;
-            background: #f57c00;
-            color: white;
-            padding: 12px 24px;
-            margin-top: 15px;
-            text-decoration: none;
-            border-radius: 6px;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-        .btn:hover {
-            background: #e65100;
-        }
-        .footer {
-            background: #222;
-            padding: 15px;
-            text-align: center;
-            color: white;
-            margin-top: 20px;
-        }
-        a {
-            color: #f57c00;
-        }
-    </style>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Machindra Kharat – Portfolio</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Machindra Parshuram Kharat – Infrastructure Support Engineer, Firewall & Wireless LAN Specialist.">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome (icons) -->
+  <script src="https://kit.fontawesome.com/1c7c7d488d.js" crossorigin="anonymous"></script>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-        <h1>Machindra Kharat</h1>
-        <p>IT Engineer | Infrastructure & Security</p>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#experience">Experience</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
-    
-    <div class="container">
-        <section id="about">
-            <h2>About Me</h2>
-            <p>I am an IT professional with expertise in infrastructure support and cybersecurity. Passionate about problem-solving and optimizing IT operations, I strive to implement efficient and secure systems that enhance organizational productivity.</p>
-            <p>My experience includes network management, firewall configuration, cybersecurity best practices, and cloud computing solutions. With a proactive approach, I continuously learn and adapt to emerging technologies to stay ahead in the industry.</p>
-        </section>
-        
-        <section id="experience">
-            <h2>Professional Experience</h2>
-            <h3>Internship - Primustechsystems</h3>
-            <ul>
-                <li><b>Network Security:</b> Configured MAC binding and user groups in Sophos Firewall to enhance security.</li>
-                <li><b>Access Control:</b> Implemented biometric authentication using Hikvision systems.</li>
-                <li><b>Data Protection:</b> Managed Outlook mailbox backups and ensured data integrity.</li>
-                <li><b>ISO Compliance:</b> Documented hardware and software details for compliance audits.</li>
-                <li><b>Remote Access:</b> Configured VPN solutions for secure remote connections to SAP servers.</li>
-            </ul>
-        </section>
-        
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <p>Email: <a href="mailto:machindrakharat6665@gmail.com">machindrakharat6665@gmail.com</a></p>
-            <p>Phone: <a href="tel:8421210899">8421210899</a></p>
-            <a href="mailto:machindrakharat6665@gmail.com" class="btn">Get in Touch</a>
-        </section>
+  <!-- ==== NAVIGATION ==== -->
+  <header class="navbar">
+    <div class="container nav-wrapper">
+      <a href="#" class="logo">Machindra Kharat</a>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger"><i class="fas fa-bars"></i></div>
+      </nav>
     </div>
-    
-    <footer class="footer">
-        <p>&copy; 2025 Machindra Kharat. All Rights Reserved.</p>
-    </footer>
+  </header>
+
+  <!-- ==== HERO ==== -->
+  <section id="home" class="hero">
+    <div class="container hero-content">
+      <img src="assets/profile.jpg" alt="Machindra Kharat" class="hero-img">
+      <h1>Machindra Parshuram Kharat</h1>
+      <p class="tagline">Infrastructure Support Engineer • Firewall & Wireless LAN Specialist</p>
+
+      <div class="hero-cta">
+        <a href="assets/Machindra_Kharat.pdf" download class="btn-primary"><i class="fas fa-download"></i> Download Resume</a>
+        <a href="mailto:machindrakharat6665@gmail.com" class="btn-secondary"><i class="fas fa-envelope"></i> Email Me</a>
+      </div>
+
+      <div class="hero-social">
+        <a href="tel:+918421210899"><i class="fas fa-phone"></i></a>
+        <a href="mailto:machindrakharat6665@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://github.com/kharat777" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/machindrakharat" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==== ABOUT ==== -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p class="lead">
+        To pursue a challenging and satisfying career and to be a part of a progressive and growth‑oriented organization that gives me scope to enhance my knowledge and skills to stay up with the latest technological changes.
+      </p>
+    </div>
+  </section>
+
+  <!-- ==== EDUCATION ==== -->
+  <section id="education" class="section bg-light">
+    <div class="container">
+      <h2>Education</h2>
+      <table class="education-table">
+        <thead>
+          <tr>
+            <th>Degree / Exam</th>
+            <th>Board / University</th>
+            <th>Year</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Engineering (Computer)</td>
+            <td>Mumbai University</td>
+            <td>2024</td>
+          </tr>
+          <tr>
+            <td>Diploma (Computer)</td>
+            <td>MSBT</td>
+            <td>2021</td>
+          </tr>
+          <tr>
+            <td>HSC (Science)</td>
+            <td>Maharashtra State Board</td>
+            <td>2019</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ==== EXPERIENCE ==== -->
+  <section id="experience" class="section">
+    <div class="container">
+      <h2>Experience</h2>
+
+      <!-- Internship -->
+      <div class="exp-block">
+        <h3>Infrastructure Support Intern – Primus Techsystems Pvt. Ltd., Pune</h3>
+        <ul>
+          <li>Provided L1/L2 support for over 300 end‑users across Windows 10 systems.</li>
+          <li>Resolved connectivity issues involving VPN, LAN/WAN, and wireless networks.</li>
+          <li>Assisted in network security administration: firewall configuration, VPN setup, and security‑incident monitoring.</li>
+          <li>Deployed and managed Microsoft Intune for MDM/MAM, enforcing security and compliance on Windows, Android, and iOS devices.</li>
+        </ul>
+      </div>
+
+      <!-- Professional -->
+      <div class="exp-block">
+        <h3>Technical Support Engineer – VPIT Global Solution, Pune</h3>
+        <ul>
+          <li>Implemented and maintained enterprise firewall solutions (policy configuration, SSL inspection, traffic monitoring, threat prevention).</li>
+          <li>Designed and enforced firewall security policies for internal and external networks, aligning with compliance requirements.</li>
+          <li>Configured NAT, VPN tunnels, and traffic filtering to secure connectivity between data‑centers and cloud workloads.</li>
+          <li>Managed Cisco Catalyst 9800‑L Wireless LAN Controller (SSID creation, AP migration, software upgrades, security policies).</li>
+          <li>Optimized network performance by handling AP registration, backup/restore, and MAC address whitelisting.</li>
+          <li>Enhanced network security posture through firewall hardening and wireless access control.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==== SKILLS ==== -->
+  <section id="skills" class="section bg-light">
+    <div class="container">
+      <h2>Key Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h4>Firewall & Security</h4>
+          <p>Policy configuration, NAT, VPN setup, SSL inspection, intrusion prevention, traffic monitoring.</p>
+        </div>
+
+        <div class="skill-card">
+          <h4>Wireless LAN Controller (WLC)</h4>
+          <p>Cisco Catalyst 9800‑L, SSID creation, AP provisioning, software upgrades, RF optimization.</p>
+        </div>
+
+        <div class="skill-card">
+          <h4>Endpoint Security (Basic)</h4>
+          <p>Antivirus & EDR management, malware detection/removal, endpoint patching, policy enforcement.</p>
+        </div>
+
+        <div class="skill-card">
+          <h4>Monitoring & Troubleshooting</h4>
+          <p>System performance monitoring, log analysis, incident resolution (L1/L2/L3), disaster recovery planning.</p>
+        </div>
+
+        <div class="skill-card">
+          <h4>Networking</h4>
+          <p>Routing & switching, access control, MAC filtering, secure connectivity (LAN/WAN, VPN).</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==== CONTACT ==== -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact</h2>
+
+      <div class="contact-details">
+        <p><i class="fas fa-phone"></i> <a href="tel:+918421210899">+91‑8421210899</a></p>
+        <p><i class="fas fa-envelope"></i> <a href="mailto:machindrakharat6665@gmail.com">machindrakharat6665@gmail.com</a></p>
+        <p><i class="fab fa-github"></i> <a href="https://github.com/kharat777" target="_blank">github.com/kharat777</a></p>
+        <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/machindrakharat" target="_blank">LinkedIn</a></p>
+      </div>
+
+      <!-- Optional simple contact form (replace YOUR_RECAPTCHA_SITE_KEY if you enable) -->
+      <form id="contactForm" action="https://formspree.io/f/your-form-id" method="POST" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="_replyto" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn-primary">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ==== FOOTER ==== -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <span id="currentYear"></span> Machindra Kharat • All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
 </body>
 </html>
