@@ -1,52 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Required meta tags -->
+  <!-- ==== META ==== -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Machindra Kharat – Portfolio</title>
+  <title>Machindra Kharat – Cloud & Network Engineer</title>
+  <meta name="description" content="Machindra Parshuram Kharat – Infrastructure Support Engineer specialized in firewalls, wireless LAN, AWS and Azure cloud services.">
 
-  <!-- SEO -->
-  <meta name="description" content="Machindra Parshuram Kharat – Infrastructure Support Engineer, Firewall & Wireless LAN Specialist.">
-
-  <!-- Google Font -->
+  <!-- ==== FONTS & ICONS ==== -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-
-  <!-- Font Awesome (icons) -->
   <script src="https://kit.fontawesome.com/1c7c7d488d.js" crossorigin="anonymous"></script>
 
-  <!-- Styles -->
+  <!-- ==== CSS ==== -->
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body data-theme="light">
   <!-- ==== NAVIGATION ==== -->
   <header class="navbar">
     <div class="container nav-wrapper">
       <a href="#" class="logo">Machindra Kharat</a>
       <nav class="nav">
         <ul class="nav-list">
-          <li><a href="#home">Home</a></li>
+          <li><a href="#hero">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#education">Education</a></li>
           <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certifications">Certifications</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-        <div class="hamburger"><i class="fas fa-bars"></i></div>
+        <div class="nav-icons">
+          <button id="theme-toggle" aria-label="Toggle dark / light theme">
+            <i class="fas fa-moon"></i>
+          </button>
+          <div class="hamburger"><i class="fas fa-bars"></i></div>
+        </div>
       </nav>
     </div>
   </header>
 
   <!-- ==== HERO ==== -->
-  <section id="home" class="hero">
+  <section id="hero" class="hero">
     <div class="container hero-content">
       <img src="assets/profile.jpg" alt="Machindra Kharat" class="hero-img">
       <h1>Machindra Parshuram Kharat</h1>
-      <p class="tagline">Infrastructure Support Engineer • Firewall & Wireless LAN Specialist</p>
+      <p class="tagline">
+        Infrastructure Support Engineer • Firewall • Wireless LAN • AWS • Azure
+      </p>
 
       <div class="hero-cta">
-        <a href="assets/Machindra_Kharat.pdf" download class="btn-primary"><i class="fas fa-download"></i> Download Resume</a>
+        <a href="assets/resume.pdf" download class="btn-primary"><i class="fas fa-file-download"></i> Download Resume</a>
         <a href="mailto:machindrakharat6665@gmail.com" class="btn-secondary"><i class="fas fa-envelope"></i> Email Me</a>
       </div>
 
@@ -64,7 +69,9 @@
     <div class="container">
       <h2>About Me</h2>
       <p class="lead">
-        To pursue a challenging and satisfying career and to be a part of a progressive and growth‑oriented organization that gives me scope to enhance my knowledge and skills to stay up with the latest technological changes.
+        To pursue a challenging and satisfying career and to be a part of a progressive,
+        growth‑oriented organization that gives me scope to enhance my knowledge and
+        skills to stay up with the latest technological changes.
       </p>
     </div>
   </section>
@@ -105,63 +112,138 @@
   <!-- ==== EXPERIENCE ==== -->
   <section id="experience" class="section">
     <div class="container">
-      <h2>Experience</h2>
+      <h2>Professional Experience</h2>
 
-      <!-- Internship -->
-      <div class="exp-block">
-        <h3>Infrastructure Support Intern – Primus Techsystems Pvt. Ltd., Pune</h3>
-        <ul>
-          <li>Provided L1/L2 support for over 300 end‑users across Windows 10 systems.</li>
-          <li>Resolved connectivity issues involving VPN, LAN/WAN, and wireless networks.</li>
-          <li>Assisted in network security administration: firewall configuration, VPN setup, and security‑incident monitoring.</li>
-          <li>Deployed and managed Microsoft Intune for MDM/MAM, enforcing security and compliance on Windows, Android, and iOS devices.</li>
-        </ul>
-      </div>
+      <ul class="timeline">
 
-      <!-- Professional -->
-      <div class="exp-block">
-        <h3>Technical Support Engineer – VPIT Global Solution, Pune</h3>
-        <ul>
-          <li>Implemented and maintained enterprise firewall solutions (policy configuration, SSL inspection, traffic monitoring, threat prevention).</li>
-          <li>Designed and enforced firewall security policies for internal and external networks, aligning with compliance requirements.</li>
-          <li>Configured NAT, VPN tunnels, and traffic filtering to secure connectivity between data‑centers and cloud workloads.</li>
-          <li>Managed Cisco Catalyst 9800‑L Wireless LAN Controller (SSID creation, AP migration, software upgrades, security policies).</li>
-          <li>Optimized network performance by handling AP registration, backup/restore, and MAC address whitelisting.</li>
-          <li>Enhanced network security posture through firewall hardening and wireless access control.</li>
-        </ul>
+        <!-- ==== Internship ==== -->
+        <li class="timeline-item">
+          <div class="timeline-content">
+            <span class="timeline-date">2023 – 2024</span>
+            <h3>Infrastructure Support Intern</h3>
+            <h4>Primus Techsystems Pvt. Ltd., Pune</h4>
+            <ul class="timeline-bullets">
+              <li>Provided L1/L2 support for 300+ Windows 10 end‑users.</li>
+              <li>Resolved VPN, LAN/WAN and wireless connectivity issues.</li>
+              <li>Assisted with firewall configuration, VPN setup, and security‑incident monitoring.</li>
+              <li>Deployed Microsoft Intune for MDM/MAM on Windows, Android, and iOS devices.</li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- ==== VPIT (Technical Support Engineer) ==== -->
+        <li class="timeline-item">
+          <div class="timeline-content">
+            <span class="timeline-date">2024 – Present</span>
+            <h3>Technical Support Engineer</h3>
+            <h4>VPIT Global Solution, Pune</h4>
+            <ul class="timeline-bullets">
+              <li>Implemented & maintained enterprise firewall solutions (policy config, SSL inspection, threat prevention).</li>
+              <li>Designed firewall security policies adhering to compliance requirements.</li>
+              <li>Configured NAT, VPN tunnels, traffic filtering for secure data‑center ↔ cloud connectivity.</li>
+              <li>Managed Cisco Catalyst 9800‑L Wireless LAN Controller – SSID creation, AP migration, firmware upgrades, RF optimization.</li>
+              <li>Optimized network performance; handled AP registration, backup/restore, MAC address whitelisting.</li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- ==== AWS Experience ==== -->
+        <li class="timeline-item">
+          <div class="timeline-content">
+            <span class="timeline-date">2022 – 2023</span>
+            <h3>Cloud Engineer (AWS)</h3>
+            <h4>Freelance / Internal Projects</h4>
+            <ul class="timeline-bullets">
+              <li>Designed and launched VPCs with public/private subnets, route tables and NAT gateways.</li>
+              <li>Automated EC2 provisioning, EBS volume management, and Auto Scaling groups using CloudFormation.</li>
+              <li>Implemented secure IAM roles & policies; integrated S3 bucket policies and encryption (SSE‑KMS).</li>
+              <li>Set up CloudWatch alarms, logs, and dashboards for proactive monitoring.</li>
+              <li>Used AWS Systems Manager (SSM) for patch management across 150+ Linux/Windows instances.</li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- ==== Azure Experience ==== -->
+        <li class="timeline-item">
+          <div class="timeline-content">
+            <span class="timeline-date">2023 – 2024</span>
+            <h3>Cloud Engineer (Azure)</h3>
+            <h4>Freelance / Internal Projects</h4>
+            <ul class="timeline-bullets">
+              <li>Created Azure Virtual Networks, subnets, and Network Security Groups (NSG) for micro‑segmentation.</li>
+              <li>Provisioned Azure Virtual Machines with Azure Disk Encryption and Azure Backup.</li>
+              <li>Configured Azure Active Directory for unified identity and SSO across SaaS apps.</li>
+              <li>Implemented Azure Monitor & Log Analytics for end‑to‑end telemetry and alerting.</li>
+              <li>Automated resource deployment with Azure Resource Manager (ARM) templates and Azure CLI.</li>
+            </ul>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+  </section>
+
+  <!-- ==== PROJECTS ==== -->
+  <section id="projects" class="section bg-light">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="grid projects-grid">
+        <article class="project-card">
+          <img src="assets/project1.jpg" alt="Project 1">
+          <div class="project-info">
+            <h3>Network Hardening Automation</h3>
+            <p>PowerShell & Ansible scripts that automatically audit firewall rule‑sets, enforce baseline policies, and generate compliance reports.</p>
+            <div class="project-tags"><span>PowerShell</span><span>Ansible</span><span>Firewall</span></div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="assets/project2.jpg" alt="Project 2">
+          <div class="project-info">
+            <h3>Multi‑Cloud Monitoring Dashboard</h3>
+            <p>Unified Grafana dashboard aggregating CloudWatch and Azure Monitor metrics, with alerting via Slack and Teams.</p>
+            <div class="project-tags"><span>AWS</span><span>Azure</span><span>Grafana</span></div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="assets/project3.jpg" alt="Project 3">
+          <div class="project-info">
+            <h3>Intune MDM Rollout</h3>
+            <p>End‑to‑end deployment of Microsoft Intune for 300+ Windows 10 & Android devices, enforcing compliance policies and remote wipe.</p>
+            <div class="project-tags"><span>Intune</span><span>MDM</span><span>Compliance</span></div>
+          </div>
+        </article>
       </div>
+    </div>
+  </section>
+
+  <!-- ==== CERTIFICATIONS ==== -->
+  <section id="certifications" class="section">
+    <div class="container">
+      <h2>Certifications</h2>
+      <ul class="cert-list">
+        <li><i class="fab fa-aws"></i> AWS Certified Solutions Architect – Associate (2023)</li>
+        <li><i class="fab fa-microsoft"></i> Microsoft Certified: Azure Fundamentals (2024)</li>
+        <li><i class="fas fa-check-circle"></i> Cisco Certified Network Associate (CCNA) – Routing & Switching (2022)</li>
+        <li><i class="fas fa-check-circle"></i> CompTIA Security+ (2022)</li>
+      </ul>
     </div>
   </section>
 
   <!-- ==== SKILLS ==== -->
   <section id="skills" class="section bg-light">
     <div class="container">
-      <h2>Key Skills</h2>
-      <div class="skills-grid">
-        <div class="skill-card">
-          <h4>Firewall & Security</h4>
-          <p>Policy configuration, NAT, VPN setup, SSL inspection, intrusion prevention, traffic monitoring.</p>
-        </div>
-
-        <div class="skill-card">
-          <h4>Wireless LAN Controller (WLC)</h4>
-          <p>Cisco Catalyst 9800‑L, SSID creation, AP provisioning, software upgrades, RF optimization.</p>
-        </div>
-
-        <div class="skill-card">
-          <h4>Endpoint Security (Basic)</h4>
-          <p>Antivirus & EDR management, malware detection/removal, endpoint patching, policy enforcement.</p>
-        </div>
-
-        <div class="skill-card">
-          <h4>Monitoring & Troubleshooting</h4>
-          <p>System performance monitoring, log analysis, incident resolution (L1/L2/L3), disaster recovery planning.</p>
-        </div>
-
-        <div class="skill-card">
-          <h4>Networking</h4>
-          <p>Routing & switching, access control, MAC filtering, secure connectivity (LAN/WAN, VPN).</p>
-        </div>
+      <h2>Technical Skills</h2>
+      <div class="grid skills-grid">
+        <div class="skill-card"><i class="fas fa-shield-alt"></i> Firewall & Security</div>
+        <div class="skill-card"><i class="fas fa-wifi"></i> Wireless LAN (Cisco Catalyst 9800‑L)</div>
+        <div class="skill-card"><i class="fab fa-aws"></i> AWS (EC2, VPC, CloudFormation, CloudWatch)</div>
+        <div class="skill-card"><i class="fab fa-microsoft"></i> Azure (VNets, VMs, AD, Monitor)</div>
+        <div class="skill-card"><i class="fas fa-server"></i> Endpoint Security (Antivirus, EDR)</div>
+        <div class="skill-card"><i class="fas fa-tools"></i> Monitoring & Troubleshooting</div>
+        <div class="skill-card"><i class="fas fa-network-wired"></i> Routing & Switching</div>
+        <div class="skill-card"><i class="fab fa-windows"></i> Microsoft Intune (MDM/MAM)</div>
       </div>
     </div>
   </section>
@@ -169,33 +251,40 @@
   <!-- ==== CONTACT ==== -->
   <section id="contact" class="section">
     <div class="container">
-      <h2>Contact</h2>
+      <h2>Contact Me</h2>
 
       <div class="contact-details">
-        <p><i class="fas fa-phone"></i> <a href="tel:+918421210899">+91‑8421210899</a></p>
+        <p><i class="fas fa-phone"></i> <a href="tel:+918421210899">+91‑84212‑10899</a></p>
         <p><i class="fas fa-envelope"></i> <a href="mailto:machindrakharat6665@gmail.com">machindrakharat6665@gmail.com</a></p>
         <p><i class="fab fa-github"></i> <a href="https://github.com/kharat777" target="_blank">github.com/kharat777</a></p>
         <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/machindrakharat" target="_blank">LinkedIn</a></p>
       </div>
 
-      <!-- Optional simple contact form (replace YOUR_RECAPTCHA_SITE_KEY if you enable) -->
-      <form id="contactForm" action="https://formspree.io/f/your-form-id" method="POST" class="contact-form">
+      <!-- OPTIONAL FORM (replace YOUR_FORMSPREE_ID) -->
+      <form id="contactForm"
+            action="https://formspree.io/f/YOUR_FORMSPREE_ID"
+            method="POST"
+            class="contact-form">
         <input type="text" name="name" placeholder="Your Name" required>
         <input type="email" name="_replyto" placeholder="Your Email" required>
         <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-        <button type="submit" class="btn-primary">Send Message</button>
+        <button type="submit" class="btn-primary"><i class="fas fa-paper-plane"></i> Send Message</button>
       </form>
     </div>
   </section>
 
+  <!-- ==== BACK‑TO‑TOP BUTTON ==== -->
+  <button id="backToTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+
   <!-- ==== FOOTER ==== -->
   <footer class="footer">
     <div class="container">
-      <p>&copy; <span id="currentYear"></span> Machindra Kharat • All Rights Reserved.</p>
+      <p>&copy; <span id="year"></span> Machindra Kharat • All Rights Reserved.</p>
     </div>
   </footer>
 
-  <!-- Scripts -->
+  <!-- ==== JS ==== -->
   <script src="script.js"></script>
 </body>
 </html>
+
